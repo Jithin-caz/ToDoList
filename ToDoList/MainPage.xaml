@@ -22,7 +22,7 @@
             <CollectionView.ItemsSource >
                 <x:Array
                     Type="{x:Type x:String}">
-                    <x:String>Apples</x:String>
+                    <x:String>Apple</x:String>
                     <x:String>Oranges</x:String>
                     <x:String>Grapes</x:String>
                 </x:Array>
