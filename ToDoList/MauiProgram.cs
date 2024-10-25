@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using ToDoList.ViewModel;
 
 namespace ToDoList
 {
@@ -18,7 +19,8 @@ namespace ToDoList
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
-
+            builder.Services.AddSingleton<MainPage>();
+            builder.Services.AddSingleton<MainViewModel>();
             return builder.Build();
         }
     }

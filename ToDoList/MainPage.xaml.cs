@@ -1,23 +1,18 @@
-﻿namespace ToDoList
+﻿using ToDoList.ViewModel;
+
+namespace ToDoList
 {
     public partial class MainPage : ContentPage
     {
        
 
-        public MainPage()
+        public MainPage(MainViewModel vm)
         {
             InitializeComponent();
+            BindingContext = vm;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-   
-        }
-
-        private void Entry_Focused(object sender, FocusEventArgs e)
-        {
-
-        }
+       
     }
 
 }
